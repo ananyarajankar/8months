@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Love Letters for 8 different Times</title>
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e6;
+            color: #3e2723;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #e4d5c7;
+            color: #5a3d2b;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .letter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .letter-box {
+            background-color: #fff9f0;
+            border: 2px solid #d2b48c;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            margin: 20px 0;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .letter-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .letter-header {
+            font-size: 1.8em;
+            color: #8b4513;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .letter-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #5a3d2b;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e4d5c7;
+            color: #5a3d2b;
+            font-size: 1em;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>8 Letters for 8 Different Times</header>
+
+    <div class="letter-container" id="letterContainer"></div>
+
+    <footer>&copy; from kanmani to dumbo</footer>
+    <script>
+        const letters = [
+            {
+                header: "LOVE LETTER I WANTED TO GIVE U AFTER OUR FIRST DATE !",
+                content: "To the boy who made my first date perfect,I still can’t believe our first date was real—like a dream I never want to wake up from. Honestly, I was so anxious about meeting you that day. A part of me was ready to turn around and run back to my hostel, but then you showed up. The way you shook my hand with that calm confidence instantly put me at ease.Buddy Café feels like it’ll always hold a special place in my heart now. Sitting there with you, sharing a sandwich and peach iced tea, felt so effortless. When you told me I looked just as beautiful as my pictures, I felt my heart skip a beat. It wasn’t just the compliment—it was the way you said it, like you truly meant it.I really wanted to show you around my college, but sometimes life has its own plans. Instead, we found ourselves at that art gallery in KP, laughing and critiquing the pieces like we were professional critics. Every moment felt natural, like we were in our little bubble of fun and endless conversations.And oh, that dosa at Gatti Chutney! I’ll never forget how you introduced me to the best one I’ve ever had. I felt so happy just sitting there with you, sharing a meal, talking, and enjoying the simplicity of being together.When we went to the entertainment store, and you got me that diary, it felt so thoughtful. Every page in it will remind me of this day. And then there was that moment—you trying to hold my hand as we walked. Smooth move, by the way. It worked, and I’m so glad it did.By the time we boarded the metro, I was so tired, but having you by my side made all the exhaustion disappear. Resting my head on your shoulder, listening to music together—it was the most peaceful feeling. When you dropped me near Cad B, I couldn’t help but smile, thinking about how perfect everything felt.You treated me with so much kindness and warmth that day. You listened, talked, and made me feel like the most important person in the world. You bought me flowers, and for my first date, I honestly couldn’t have asked for anything better. have been a beautiful journey of discovery, laughter, and deep connection. Every day with you feels like a new adventure."
+            },
+            {
+                header: "LOVE LETTER I WANTED TO GIVE U AFTER OUR FIRST KISS !",
+                content: "I’ve been thinking about that day, and I can’t help but smile. There we were, sitting on that park bench, surrounded by trees, sunlight peeking through, and a bunch of random people walking by, probably giving us the “sus couple” look. But honestly, in that moment, it just felt right. It was one of those moments that made everything else fade away.I remember giving you the choice: wait for three months and let our kiss hold more meaning, or just go for it right then, knowing it might lose some of its weight. And without missing a beat, you said, “Why not kiss now? We’ll still have the same meaning, but with even more love in three months.” And I thought, well, why not? So, there we were, kissing in the middle of a park, with the world going on around us.That kiss was different. It wasn’t just a kiss—it was like the universe was telling me, “Yeah, this feels good in all languages.” It was fun, a little impulsive, and I realized then that you were something special. Honestly, I’ll always remember that moment, not because it was some grand, movie-worthy scene, but because it was us. Simple, yet perfect in its own way."
+            },
+            {
+                header: "LOVE LETTER I WANTED TO GIVE U WHEN U WERE FAR AWAY !",
+                content: "Vedh,You’ve officially become an irreplaceable part of my daily routine, and honestly, I can’t even imagine my day without you in it. I used to swear I’d never trust or depend on anyone again because, well, letting someone in felt like asking for a broken heart. But you, you’ve somehow turned that whole idea upside down. I never thought I’d be the type to be this… clingy (I blame you, honestly), but trusting and depending on you has been the best thing I’ve done in a while.You're far, but I’m here, daydreaming about the time when I can just hug you and spill all the things I’ve been holding in. Like, seriously, I want to be there with you, holding you tight, kissing you like we’re in some sappy rom-com, and just reminding you how much you mean to me. I know I might get a little too cheesy at times, but hey, for you, I’ll wear the title of cringe person proudly. You deserve that, and more.I want to be the best version of myself for you, even if that means being the overly emotional, slightly goofy, and ridiculously in love person I am now. You deserve someone who makes your heart race with the simplest smile, and I’m ready to be that person for you."
+            },
+            {
+                header: "LOVE LETTER TO THANK YOU !",
+                content: "Hey Vedh,I just wanted to take a moment to thank you. I’m not always the easiest person to deal with, especially when life decides to throw one of its tantrums at me. But you’ve somehow managed to handle all my moods, rants, and, let’s be real, the many times I’ve been a walking emotional rollercoaster. Seriously, if patience was a sport, you’d have a gold medal by now.It’s not easy dealing with someone who can go from HEHE  to WTF in 0.5 seconds, but you’ve done it. And you’ve done it with grace, understanding, and a whole lot of humor. You’ve been the calm in my storm, even when I probably didn’t deserve it. I don’t know how you manage to handle me so well, but I’m honestly so grateful for it. guess I just want to say thank you for sticking around, for being there when I’ve been all over the place. You’re not just the guy who makes me smile when I’m happy, but the one who knows how to make me feel understood, no matter how dramatic I get. And for that, I appreciate you more than you’ll ever know.You make even the hard days feel a little less hard, and honestly, that’s pretty special. You’ve got this magical ability to turn the worst days into something bearable. And for that, I’ll always be thankful.You’re the best. Don’t ever forget that."
+            },
+            {
+                header: "LOVE LETTER I WANT TO GIVE WHEN ITS MY FAULT ",
+                content: "Hey VEDH,I’ve been thinking about everything that happened, and I just want to start by saying I’m really sorry. I know I messed up, and I let my emotions get the best of me. I said things I shouldn’t have, and honestly, I acted in a way that wasn’t fair to you at all. You didn’t deserve any of that.You’ve always been there for me, even when I’ve been difficult, and I feel terrible for making you feel hurt or upset. I don’t want to be the reason you feel bad, and I want you to know that I’m working on being better. I get it if you're frustrated with me, and I just want to apologize for not being the person you deserve in that moment.Baby, I care about you so much, and I hope you can understand that I’ll do better. I know it’s not easy to just brush it off, but I really want us to move past this and not let it come between us. I’m here when you're ready to talk, and I promise I’ll listen this time."
+            },
+            {
+                header: "LOVE LETTER I WANT TO GIVE WHEN ITS YOUR  FAULT",
+                content: "Hey Vedh,I’ve been thinking about what happened, and I need to be honest with you. Sometimes, when things get tough, you can get a little mean, and I know it’s just your way of handling things. But it’s hard for me to deal with, and it leaves me feeling hurt. I get that everyone has their own way of coping, but baby, it would mean so much to me if you tried to listen, even when you’re upset.I understand that we both have our moments, but I just need you to know how it makes me feel. I don’t want us to keep getting stuck in these kinds of moments. I want us to work through things, not let them drive us apart.I know we’re both learning, and I’m just asking that we try to understand each other a little more, even when things get heated. You mean a lot to me, and I want us to keep growing, together."
+            },
+            {
+                header: "LOVE LETTER I WANT TO GIVE WHEN U FEEL DOWN ",
+                content: "I know things have been tough for you lately, whether it’s home stress, college, or just everything piling up. I can tell you’re feeling down, and I just want you to know that I’m here for you, no matter what. Whatever you're going through, I’m here to listen, and I won’t judge. You can call me, text me, or just talk whenever you need to get things off your chest.It’s okay to feel overwhelmed sometimes, but remember this: it’s going to be alright. We’ve got this. We’ll get through it together, one step at a time. You’re not alone in this, and I’m always just a message away.You mean so much to me, and I’m here to support you through anything that comes your way. Don’t ever forget that. We’ll face whatever life throws at us, and I’ll be by your side, cheering you on."
+            },
+            {
+                header: "8 MONTH LETTER AND FOR MANY MORE AHEAD !",
+                content: "Hey baby,I can't believe it's already been 8 months since we first met on that dating app – time really does fly, doesn’t it? It feels like just yesterday we were two strangers, swiping through profiles and wondering if this whole online dating thing would work out. But look at us now—who would’ve thought that a random click would turn into something this special?We’ve been through a lot in these months. From getting to know each other, to dealing with distance, and navigating the ups and downs that come with any relationship. It's honestly been a rollercoaster—sometimes wild, sometimes funny, and a few times I’ve almost screamed (but in a cute way, of course). We've learned a lot about each other and even more about ourselves. We’ve been through moments of happiness that made me smile for days, and times when we felt insecure or unsure, but we've always come out stronger.It’s crazy to think how much you mean to me now, and how much you've changed my world in just 8 months. You've been the best thing to happen to me, and I honestly can't wait to see what the future holds for us. You’re not just my partner, you’re my best friend, my biggest support, and the one I want to build countless more memories with. Here's to many more months (and years) of laughs, love, and growing together."
+            }
+        ];
+
+        function createLetter(letter) {
+            const letterBox = document.createElement('div');
+            letterBox.classList.add('letter-box');
+
+            const header = document.createElement('h2');
+            header.classList.add('letter-header');
+            header.innerHTML = letter.header;
+            letterBox.appendChild(header);
+
+            const content = document.createElement('p');
+            content.classList.add('letter-content');
+            content.innerHTML = letter.content;
+            letterBox.appendChild(content);
+
+            return letterBox;
+        }
+
+        const letterContainer = document.getElementById('letterContainer');
+        letters.forEach(letter => {
+            const letterElement = createLetter(letter);
+            letterContainer.appendChild(letterElement);
+        });
+    </script>
+</body>
+</html>
