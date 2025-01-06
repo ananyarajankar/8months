@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Playlists</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #328edf, #191414);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .playlists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .playlist-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .playlist-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .playlist-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .playlist-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .playlist-title {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .playlist-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .playlist-link {
+            display: inline-block;
+            background: #8f9dac;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .playlist-link:hover {
+            background: #1e9cd7;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .playlist-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>our playlist</h1>
+            <p>A couple who listens songs together they stay together !</p>
+        </header>
+
+        <div class="playlists">
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <img src="ts.jpeg" alt="Happy Vibes Playlist">
+                </div>
+                <h2 class="playlist-title">ananya's playlist for vedh</h2>
+                <p class="playlist-description">Songs that make me think of you </p>
+                <a href="https://open.spotify.com/playlist/63SsS7EaUt7vfpp0Msu0ZD?si=11040c3cb4774e41" class="playlist-link" target="_blank">Listen on Spotify</a>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <img src="us.jpeg" alt="Chill Evening Playlist">
+                </div>
+                <h2 class="playlist-title">our mixtape</h2>
+                <p class="playlist-description">weekend +taylor swift</p>
+                <a href="https://open.spotify.com/playlist/3aDaAN9vDksQ9ayNj1vpoM?si=b03e7c1458a340c8" class="playlist-link" target="_blank">Listen on Spotify</a>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <img src="weeked.jpeg" alt="Road Trip Mix">
+                </div>
+                <h2 class="playlist-title">vedh's playist for ananya </h2>
+                <p class="playlist-description">Songs that make you think of me </p>
+                <a href="https://open.spotify.com/playlist/635Ds7LER9TcfPSyd6SVTy?si=502cf6b254da4602" class="playlist-link" target="_blank">Listen on Spotify</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
